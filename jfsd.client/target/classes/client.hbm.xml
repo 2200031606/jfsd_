@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC 
+   "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+   "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+   <class name="com.klef.jfsd.client.Client" table="CLIENT">
+   
+       <!-- Primary Key -->
+       <id name="id">
+           <column name="ID" />
+           <generator class="native"/>
+       </id>
+
+       <!-- Properties -->
+       <property name="name">
+           <column name="NAME" />
+       </property>
+
+       <property name="gender">
+           <column name="GENDER" />
+       </property>
+
+       <property name="age">
+           <column name="AGE" />
+       </property>
+
+       <property name="location">
+           <column name="LOCATION" />
+       </property>
+
+       <property name="email">
+           <column name="EMAIL" />
+       </property>
+
+       <property name="moblino">
+           <column name="MOBILE" />
+       </property>
+
+   </class>
+</hibernate-mapping>
